@@ -1,0 +1,96 @@
+{\rtf1\ansi\ansicpg936\cocoartf2509
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 HelveticaNeue-Medium;\f1\fnil\fcharset134 PingFangSC-Medium;\f2\fnil\fcharset0 Menlo-Regular;
+}
+{\colortbl;\red255\green255\blue255;\red29\green29\blue29;\red255\green255\blue255;\red0\green0\blue255;
+\red255\green255\blue254;\red0\green0\blue0;\red19\green120\blue72;}
+{\*\expandedcolortbl;;\cssrgb\c14902\c14902\c14902;\cssrgb\c100000\c100000\c100000;\cssrgb\c0\c0\c100000;
+\cssrgb\c100000\c100000\c99608;\cssrgb\c0\c0\c0;\cssrgb\c3529\c53333\c35294;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sl320\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://leetcode-cn.com/problems/remove-duplicates-from-sorted-array/"}}{\fldrslt 
+\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 26. 
+\f1 \'c9\'be\'b3\'fd\'c5\'c5\'d0\'f2\'ca\'fd\'d7\'e9\'d6\'d0\'b5\'c4\'d6\'d8\'b8\'b4\'cf\'ee}}
+\f2\fs26 \cf4 \cb5 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec4 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 class\cf6 \strokec6 \'a0Solution\'a0\{\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \cb5 \'a0\'a0\'a0\'a0\cf4 \strokec4 public\cf6 \strokec6 \'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0removeDuplicates(\cf4 \strokec4 int\cf6 \strokec6 []\'a0nums)\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0len=nums.length;\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0i=\cf7 \strokec7 0\cf6 \strokec6 ;\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 for\cf6 \strokec6 \'a0(\cf4 \strokec4 int\cf6 \strokec6 \'a0j=\cf7 \strokec7 1\cf6 \strokec6 \'a0;\'a0j<len\'a0;j++)\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 if\cf6 \strokec6 (nums[i]\'a0!=\'a0nums[j])\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 return\cf6 \strokec6 \'a0i+\cf7 \strokec7 1\cf6 \strokec6 ;\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \}\cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://leetcode-cn.com/problems/rotate-array/"}}{\fldrslt 
+\f0\fs28 \cf2 \cb3 \strokec2 189. 
+\f1 \'d0\'fd\'d7\'aa\'ca\'fd\'d7\'e9}}\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb5 \strokec4 class\cf6 \strokec6 \'a0Solution\'a0\{\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \cb5 \'a0\'a0\'a0\'a0\cf4 \strokec4 public\cf6 \strokec6 \'a0\cf4 \strokec4 void\cf6 \strokec6 \'a0rotate(\cf4 \strokec4 int\cf6 \strokec6 []\'a0nums,\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0k)\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0len=nums.length;\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 []\'a0a=\cf4 \strokec4 new\cf6 \strokec6 \'a0\cf4 \strokec4 int\cf6 \strokec6 [len];\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 for\cf6 \strokec6 (\cf4 \strokec4 int\cf6 \strokec6 \'a0i\'a0=\'a0\cf7 \strokec7 0\cf6 \strokec6 \'a0;\'a0i<len;\'a0i++)\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0a[(i+k)%len]=nums[i];\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 for\cf6 \strokec6 (\cf4 \strokec4 int\cf6 \strokec6 \'a0i\'a0=\'a0\cf7 \strokec7 0\cf6 \strokec6 \'a0;\'a0i<len;\'a0i++)\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0nums[i]=a[i];\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \}\cb1 \
+\pard\pardeftab720\sl320\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://leetcode-cn.com/problems/move-zeroes/"}}{\fldrslt 
+\f0\fs28 \cf2 \cb3 \strokec2 283. 
+\f1 \'d2\'c6\'b6\'af\'c1\'e3}}\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \cb5 \strokec4 class\cf6 \strokec6 \'a0Solution\'a0\{\cb1 \
+\pard\pardeftab720\sl400\partightenfactor0
+\cf6 \cb5 \'a0\'a0\'a0\'a0\cf4 \strokec4 public\cf6 \strokec6 \'a0\cf4 \strokec4 void\cf6 \strokec6 \'a0moveZeroes(\cf4 \strokec4 int\cf6 \strokec6 []\'a0nums)\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0len=nums.length;\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0i=\cf7 \strokec7 0\cf6 \strokec6 ;\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 for\cf6 \strokec6 (\cf4 \strokec4 int\cf6 \strokec6 \'a0j=\cf7 \strokec7 1\cf6 \strokec6 \'a0;\'a0j<len;j++)\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 if\cf6 \strokec6 (nums[i]!=\cf7 \strokec7 0\cf6 \strokec6 )\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0i\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\cb1 \
+\
+\cb5 \'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \}\
+\pard\pardeftab720\sl320\partightenfactor0
+{\field{\*\fldinst{HYPERLINK "https://leetcode-cn.com/problems/trapping-rain-water/"}}{\fldrslt 
+\f0\fs28 \cf2 \cb3 \strokec2 42. 
+\f1 \'bd\'d3\'d3\'ea\'cb\'ae}}\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf4 \strokec4 class\cf6 \strokec6 \'a0Solution\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\cf4 \strokec4 public\cf6 \strokec6 \'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0trap(\cf4 \strokec4 int\cf6 \strokec6 []\'a0height)\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0sum\'a0=\'a0\cf7 \strokec7 0\cf6 \strokec6 ;\cb1 \
+\cb5 \'a0\'a0\'a0\'a0Stack<Integer>\'a0stack\'a0=\'a0\cf4 \strokec4 new\cf6 \strokec6 \'a0Stack<>();\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0current\'a0=\'a0\cf7 \strokec7 0\cf6 \strokec6 ;\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\cf4 \strokec4 while\cf6 \strokec6 \'a0(current\'a0<\'a0height.length)\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 while\cf6 \strokec6 \'a0(!stack.empty()\'a0&&\'a0height[current]\'a0>\'a0height[stack.peek()])\'a0\{\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0h\'a0=\'a0height[stack.peek()];\'a0\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0stack.pop();\'a0\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 if\cf6 \strokec6 \'a0(stack.empty())\'a0\{\'a0\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 break\cf6 \strokec6 ;\'a0\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0distance\'a0=\'a0current\'a0-\'a0stack.peek()\'a0-\'a0\cf7 \strokec7 1\cf6 \strokec6 ;\'a0\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\cf4 \strokec4 int\cf6 \strokec6 \'a0min\'a0=\'a0Math.min(height[stack.peek()],\'a0height[current]);\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0sum\'a0=\'a0sum\'a0+\'a0distance\'a0*\'a0(min\'a0-\'a0h);\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0stack.push(current);\'a0\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\'a0\'a0\'a0\'a0current++;\'a0\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\}\cb1 \
+\cb5 \'a0\'a0\'a0\'a0\cf4 \strokec4 return\cf6 \strokec6 \'a0sum;\cb1 \
+\cb5 \}\cb1 \
+\cb5 \}\cb1 \
+}
